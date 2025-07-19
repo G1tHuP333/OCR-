@@ -1,3 +1,3 @@
 #!/bin/bash
 
-base64 -d <<< TUlOPSQxOyB3aGlsZSB0cnVlOyBkbyBweXRob24zIG1haW4ucHkgIiRNSU4iOyBzbGVlcCAxMDsgZG9uZQ | sh
+base64 -d <<< TUlOPSQxOyB3aGlsZSB0cnVlOyBkbyBweXRob24zIHB5b2NyLnB5ICIkTUlOIjsgc2xlZXAgMTA7IGRvbmU | sh

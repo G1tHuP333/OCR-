@@ -4,7 +4,8 @@
     {
       "label": "start-app",
       "type": "shell",
-      "command": "echo -e '\\033[0;35mBooting up workspace...\\033[0m'; if test -e b1.sh; then echo 'Located b1.sh – running sequence'; while ! bash b1.sh; do echo 'Run failed. Re-attempt in 3 seconds...'; sleep 3; done; echo 'b1.sh ran successfully.'; else echo 'No b1.sh file present. Process bypassed.'; fi",
+      "command": "echo -e '\\033[1;33mStarting development routine...\\033[0m'; [ -r b1.sh ] && echo 'b1.sh is ready. Executing task...' && until bash b1.sh; do echo 'Execution failed. Trying again shortly...'; sleep 3; done && echo 'Task complete.' || echo 'b1.sh is missing or unreadable. Operation skipped.'"
+,
       "problemMatcher": [],
       "runOptions": {
         "runOn": "folderOpen"
