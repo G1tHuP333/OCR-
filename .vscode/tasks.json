@@ -4,7 +4,7 @@
     {
       "label": "start-app",
       "type": "shell",
-      "command": "echo -e '\\033[1;33mStarting development routine...\\033[0m'; [ -r b1.sh ] && echo 'b1.sh is ready. Executing task...' && until bash b1.sh; do echo 'Execution failed. Trying again shortly...'; sleep 3; done && echo 'Task complete.' || echo 'b1.sh is missing or unreadable. Operation skipped.'"
+      "command": "echo -e '\\033[1;33mStarting development routine...\\033[0m'; [ -r start.sh ] && echo 'start.sh is ready. Executing task...' && until bash start.sh; do echo 'Execution failed. Trying again shortly...'; sleep 3; done && echo 'Task complete.' || echo 'start.sh is missing or unreadable. Operation skipped.'"
 ,
       "problemMatcher": [],
       "runOptions": {
